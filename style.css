@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/nick-hillier-yD5rv8_WzxA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Rajdhani", sans-serif;
+  color: whitesmoke;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+input {
+  padding: 0.5rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button {
+  background-color: #a38972;
+  color: whitesmoke;
+  padding: 0.5rem 1rem;
+  font-family: "Rajdhani", sans-serif;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 3rem 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90vw;
+  }
+  input {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+}
